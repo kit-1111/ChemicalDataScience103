@@ -1,0 +1,49 @@
+import pandas as pd
+
+#A: Data Cleaning & Standardisation
+def load_and_clean_setup_data(filepath, setup_name):
+    """Load and standardize data from one setup"""
+    df = pd.read_csv(filepath)
+
+    df = df.rename(columns = { "temperature_C": "temp_C", "temp_fahrenheit": "temp_F",  "concentration_M": "conc", "molarity": "conc",
+        "ph_value": "ph", "yield_percent" : "%yield", "product_yield": "%yield",})
+
+    if "temp_F" in df.columns:
+        df["temp_C"] = (df["temp_F"] - 32) * 5 / 9 #convert units
+        df = df[["time_min","temp_C", "conc", "ph", "%yield"]] #remain the same columns/names in both csv
+
+    df = df.dropna() #For handle missing values 
+    df["setup"] = setup_name
+    return df
+
+setup_a_data = load_and_clean_setup_data("/Users/kakit/Desktop/Exchange/1_Course/DSA103_Fork/ChemicalDataScience103/assignments/session06_assignment/data/setup_A.csv", "setup_A")
+setup_b_data = load_and_clean_setup_data("/Users/kakit/Desktop/Exchange/1_Course/DSA103_Fork/ChemicalDataScience103/assignments/session06_assignment/data/setup_B.csv", "setup_B")
+print("Data for setup_A:")
+print(setup_a_data)
+print("Data for setup_B:")
+print(setup_b_data)
+
+def combine_datasets(setup_a_data, setup_b_data):
+    """Combine two datasets into one"""
+    list_dfs = [setup_a_data, setup_b_data]
+    combined_df = pd.concat(list_dfs, ignore_index=True) #group to dataframe and reset index from 0 to n
+    return combined_df
+
+combined_data = combine_datasets(setup_a_data, setup_b_data)
+print("combined data:")
+print(combined_data)
+
+import numpy as np
+
+def calculate_reaction_rates(dataframe):
+    """Calculate reaction rates for each time interval"""
+    df = dataframe.copy() 
+    conc_change = df.groupby("setup")["conc"].diff() 
+    time_change = df.groupby("setup")["time_min"].diff() 
+    df["rate"] = -conc_change / time_change #add column rate
+    return df
+
+print(calculate_reaction_rates(combined_data))
+
+def find_optimal_conditions(dataframe, rates=None):
+    """Analyze data to find optimal reaction conditions"""
