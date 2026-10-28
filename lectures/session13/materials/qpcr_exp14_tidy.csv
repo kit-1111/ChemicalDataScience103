@@ -1,0 +1,61 @@
+sample_id,treatment,dose_uM,replicate,lysate_mg_per_ml,volume_ul,measured_date,run_id,excluded,repeat_if_time,comment,gene,ct,ct_flag,delta_ct_vs_gapdh
+control_0uM_r1,control,0.0,1,5.2,20.0,2025-03-12,R131,False,False,,SEPT2,24.3,uncertain,6.370000000000001
+control_0uM_r2,control,0.0,2,4.8,20.0,2025-03-12,R140,False,False,,SEPT2,23.93,,5.93
+control_0uM_r3,control,0.0,3,5.1,20.0,2025-03-12,R125,False,False,pipetting problem?,SEPT2,23.99,,5.879999999999999
+control_0uM_r4,control,0.0,4,4.8999999999999995,20.0,2025-03-12,R101,False,False,,SEPT2,23.94,,5.920000000000002
+drug_a_10uM_r1,drug_a,10.0,1,5.6,20.0,2025-03-12,R130,False,True,,SEPT2,25.2,,7.16
+drug_a_10uM_r2,drug_a,10.0,2,5.3,20.0,2025-03-12,R134,False,False,,SEPT2,25.22,,7.259999999999998
+drug_a_10uM_r3,drug_a,10.0,3,4.9,20.0,2025-03-12,R120,False,False,,SEPT2,25.45,,7.02
+drug_a_10uM_r4,drug_a,10.0,4,5.0,20.0,2025-03-12,R127,True,False,,SEPT2,25.22,,6.829999999999998
+drug_a_50uM_r1,drug_a,50.0,1,5.5,20.0,2025-03-12,R120,False,True,,SEPT2,26.76,,8.350000000000001
+drug_a_50uM_r2,drug_a,50.0,2,5.4,20.0,2025-03-13,R118,False,False,re-run 14.03,SEPT2,26.69,,8.57
+drug_a_50uM_r3,drug_a,50.0,3,5.2,20.0,2025-03-13,R134,False,False,,SEPT2,,not_detected,
+drug_a_50uM_r4,drug_a,50.0,4,4.7,20.0,2025-03-12,R120,False,False,,SEPT2,27.13,,9.25
+drug_b_10uM_r1,drug_b,10.0,1,5.8,20.0,2025-03-13,R134,True,False,contaminated?,SEPT2,24.09,,6.18
+drug_b_10uM_r2,drug_b,10.0,2,5.1,20.0,2025-03-13,R104,False,False,see note 2,SEPT2,24.3,,
+drug_b_10uM_r3,drug_b,10.0,3,5.0,20.0,2025-03-13,R100,False,False,,SEPT2,24.1,,5.740000000000002
+control_0uM_r1,control,0.0,1,5.2,20.0,2025-03-12,R131,False,False,,MARCH1,28.44,uncertain,10.510000000000002
+control_0uM_r2,control,0.0,2,4.8,20.0,2025-03-12,R140,False,False,,MARCH1,28.68,,10.68
+control_0uM_r3,control,0.0,3,5.1,20.0,2025-03-12,R125,False,False,pipetting problem?,MARCH1,28.08,,9.969999999999999
+control_0uM_r4,control,0.0,4,4.8999999999999995,20.0,2025-03-12,R101,False,False,,MARCH1,27.97,,9.95
+drug_a_10uM_r1,drug_a,10.0,1,5.6,20.0,2025-03-12,R130,False,True,,MARCH1,27.96,,9.920000000000002
+drug_a_10uM_r2,drug_a,10.0,2,5.3,20.0,2025-03-12,R134,False,False,,MARCH1,,undetermined,
+drug_a_10uM_r3,drug_a,10.0,3,4.9,20.0,2025-03-12,R120,False,False,,MARCH1,27.74,,9.309999999999999
+drug_a_10uM_r4,drug_a,10.0,4,5.0,20.0,2025-03-12,R127,True,False,,MARCH1,27.22,,8.829999999999998
+drug_a_50uM_r1,drug_a,50.0,1,5.5,20.0,2025-03-12,R120,False,True,,MARCH1,26.82,,8.41
+drug_a_50uM_r2,drug_a,50.0,2,5.4,20.0,2025-03-13,R118,False,False,re-run 14.03,MARCH1,27.13,,9.009999999999998
+drug_a_50uM_r3,drug_a,50.0,3,5.2,20.0,2025-03-13,R134,False,False,,MARCH1,26.15,,7.849999999999998
+drug_a_50uM_r4,drug_a,50.0,4,4.7,20.0,2025-03-12,R120,False,False,,MARCH1,27.28,,9.400000000000002
+drug_b_10uM_r1,drug_b,10.0,1,5.8,20.0,2025-03-13,R134,True,False,contaminated?,MARCH1,27.93,,10.02
+drug_b_10uM_r2,drug_b,10.0,2,5.1,20.0,2025-03-13,R104,False,False,see note 2,MARCH1,27.91,,
+drug_b_10uM_r3,drug_b,10.0,3,5.0,20.0,2025-03-13,R100,False,False,,MARCH1,27.62,,9.260000000000002
+control_0uM_r1,control,0.0,1,5.2,20.0,2025-03-12,R131,False,False,,GAPDH,17.93,,
+control_0uM_r2,control,0.0,2,4.8,20.0,2025-03-12,R140,False,False,,GAPDH,18.0,,
+control_0uM_r3,control,0.0,3,5.1,20.0,2025-03-12,R125,False,False,pipetting problem?,GAPDH,18.11,,
+control_0uM_r4,control,0.0,4,4.8999999999999995,20.0,2025-03-12,R101,False,False,,GAPDH,18.02,,
+drug_a_10uM_r1,drug_a,10.0,1,5.6,20.0,2025-03-12,R130,False,True,,GAPDH,18.04,,
+drug_a_10uM_r2,drug_a,10.0,2,5.3,20.0,2025-03-12,R134,False,False,,GAPDH,17.96,uncertain,
+drug_a_10uM_r3,drug_a,10.0,3,4.9,20.0,2025-03-12,R120,False,False,,GAPDH,18.43,,
+drug_a_10uM_r4,drug_a,10.0,4,5.0,20.0,2025-03-12,R127,True,False,,GAPDH,18.39,,
+drug_a_50uM_r1,drug_a,50.0,1,5.5,20.0,2025-03-12,R120,False,True,,GAPDH,18.41,,
+drug_a_50uM_r2,drug_a,50.0,2,5.4,20.0,2025-03-13,R118,False,False,re-run 14.03,GAPDH,18.12,,
+drug_a_50uM_r3,drug_a,50.0,3,5.2,20.0,2025-03-13,R134,False,False,,GAPDH,18.3,,
+drug_a_50uM_r4,drug_a,50.0,4,4.7,20.0,2025-03-12,R120,False,False,,GAPDH,17.88,,
+drug_b_10uM_r1,drug_b,10.0,1,5.8,20.0,2025-03-13,R134,True,False,contaminated?,GAPDH,17.91,,
+drug_b_10uM_r2,drug_b,10.0,2,5.1,20.0,2025-03-13,R104,False,False,see note 2,GAPDH,,missing,
+drug_b_10uM_r3,drug_b,10.0,3,5.0,20.0,2025-03-13,R100,False,False,,GAPDH,18.36,,
+control_0uM_r1,control,0.0,1,5.2,20.0,2025-03-12,R131,False,False,,ACTB,17.01,,-0.9199999999999982
+control_0uM_r2,control,0.0,2,4.8,20.0,2025-03-12,R140,False,False,,ACTB,17.58,,-0.4200000000000017
+control_0uM_r3,control,0.0,3,5.1,20.0,2025-03-12,R125,False,False,pipetting problem?,ACTB,17.39,,-0.7199999999999989
+control_0uM_r4,control,0.0,4,4.8999999999999995,20.0,2025-03-12,R101,False,False,,ACTB,17.43,,-0.5899999999999999
+drug_a_10uM_r1,drug_a,10.0,1,5.6,20.0,2025-03-12,R130,False,True,,ACTB,17.68,,-0.35999999999999943
+drug_a_10uM_r2,drug_a,10.0,2,5.3,20.0,2025-03-12,R134,False,False,,ACTB,17.48,,-0.4800000000000004
+drug_a_10uM_r3,drug_a,10.0,3,4.9,20.0,2025-03-12,R120,False,False,,ACTB,17.3,,-1.129999999999999
+drug_a_10uM_r4,drug_a,10.0,4,5.0,20.0,2025-03-12,R127,True,False,,ACTB,17.41,uncertain,-0.9800000000000004
+drug_a_50uM_r1,drug_a,50.0,1,5.5,20.0,2025-03-12,R120,False,True,,ACTB,16.9,,-1.5100000000000016
+drug_a_50uM_r2,drug_a,50.0,2,5.4,20.0,2025-03-13,R118,False,False,re-run 14.03,ACTB,17.24,,-0.8800000000000026
+drug_a_50uM_r3,drug_a,50.0,3,5.2,20.0,2025-03-13,R134,False,False,,ACTB,17.3,,-1.0
+drug_a_50uM_r4,drug_a,50.0,4,4.7,20.0,2025-03-12,R120,False,False,,ACTB,17.53,,-0.34999999999999787
+drug_b_10uM_r1,drug_b,10.0,1,5.8,20.0,2025-03-13,R134,True,False,contaminated?,ACTB,17.38,,-0.5300000000000011
+drug_b_10uM_r2,drug_b,10.0,2,5.1,20.0,2025-03-13,R104,False,False,see note 2,ACTB,17.24,,
+drug_b_10uM_r3,drug_b,10.0,3,5.0,20.0,2025-03-13,R100,False,False,,ACTB,17.43,,-0.9299999999999997
