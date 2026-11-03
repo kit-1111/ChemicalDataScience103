@@ -41,5 +41,5 @@ for smi in tqdm(smiles_list):  # limit to 200 compounds for testing, tqdm just a
         print(f"Failed for {smi[:20]}...: {e}")
 
 pubchem_df = pd.DataFrame(records)
-pubchem_df.to_csv(r"[path]\antibio_pubchem_descr.csv", index=False) # use your path and specified filename
+pubchem_df.to_csv(DATA / "antibio_pubchem_descr.csv", index=False) # use your path and specified filename
 print(f"Saved {len(pubchem_df)} entries.")
